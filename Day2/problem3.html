@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Parlour Appointment</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          background-color: #f9f9f9;
+      }
+      form {
+          max-width: 400px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+          text-align: center;
+          color: #333;
+      }
+      label {
+          display: block;
+          margin-bottom: 5px;
+          color: #555555;
+      }
+      input, select, textarea, button {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+      }
+      button {
+          background-color: #af614c;
+          color: #ffffff;
+          border: none;
+          cursor: pointer;
+      }
+      button:hover {
+          background-color: #a04553;
+      }
+  </style>
+</head>
+<body>
+
+<h2>Beauty Parlour Appointment</h2>
+
+<form action="/submit_appointment" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+    <label for="service">Select Service</label>
+    <select id="service" name="service" required>
+        <option value="">-- Choose a Service --</option>
+        <option value="haircut">Haircut</option>
+        <option value="facial">Facial</option>
+        <option value="manicure">Manicure</option>
+        <option value="pedicure">Pedicure</option>
+        <option value="makeup">Makeup</option>
+    </select>
+
+    <label for="date">Preferred Date</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Preferred Time</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="message">Additional Notes (Optional)</label>
+    <textarea id="message" name="message" rows="4" placeholder="Any specific requests or details"></textarea>
+
+    <button type="submit">Book Appointment</button>
+</form>
+
+</body>
+</html>
