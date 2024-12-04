@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .matrix {
+  display: flex;
+  flex-wrap: wrap; /* Wraps cells into multiple rows */
+  width: 100%; /* Full width container */
+  gap: 10px; /* Space between cells */
+}
+
+.cell {
+  width: calc(33.33% - 10px); /* Each cell takes 1/3 of the row */
+  height: 150px; /* Adjust based on design */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* Light background for empty cells */
+  border: 1px solid #ccc; /* Optional border for better visualization */
+}
+
+.cell img {
+  width: 100%; /* Image fills the cell */
+  height: 100%; /* Maintain aspect ratio */
+}
+  </style>
+</head>
+<body>
+  <div class="matrix">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell">
+      <img src="./Day2/img/image copy.png" alt="Image">
+    </div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+  </div>
+  
+</body>
+</html>
