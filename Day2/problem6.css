@@ -1,0 +1,16 @@
+p{
+  color: blue;
+  background-color: aqua;
+  text-align: center;
+  direction: rtl;
+  text-transform: uppercase;
+  text-indent: 0cm;
+  letter-spacing: 0cqmax;
+  line-height: normal;
+  word-spacing: normal;
+  text-shadow: cadetblue;
+}
+.p6{
+  text-align: center;
+  direction: initial;
+}
