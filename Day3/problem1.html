@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3 Image Matrix</title>
+    <style>
+        body {
+            text-align: center; /* Center content horizontally */
+        }
+
+        .image-container {
+            
+            width: 100%; /* Full width to control rows */
+        }
+
+        .image-box {
+            display: inline-block;          margin: 5px; /* Space between images */
+            width: 100px; /* Adjust width as needed */
+            height: 100px; /* Adjust height as needed */
+            overflow: hidden; /* To handle any overflow */
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image fills the box */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <div class="image-box"><img src="./image/image.png" alt="Image 1"></div>
+        <div class="image-box"><img src="./image/image.png" alt="Image 2"></div>
+        <div class="image-box"><img src="./image/image.png" alt="Image 3"></div>
+    </div>
+    <div class="image-container">
+        <div class="image-box"><img src="./image/image.png" alt="Image 4"></div>
+        <div class="image-box"><img src="./image/image.png" alt="Image 5"></div>
+        <div class="image-box"><img src="./image/image.png" alt="Image 6"></div>
+    </div>
+    <div class="image-container">
+        <div class="image-box"><img src="./image/image.png" alt="Image 7"></div>
+        <div class="image-box"><img src="./image/image.png" alt="Image 8"></div>
+        <div class="image-box"><img src="./image/image.png" alt="Image 9"></div>
+    </div>
+</body>
+</html>
